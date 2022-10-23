@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+header {
+  height: 11%;
+}
+.head {
+  background-color: green;
+  height: 50%;
+}
+.head_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 55px;
+  width: 42%;
+}
+.news {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  width: 15%;
+}
+.paragraphe {
+  color: white;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41%;
+}
+.link {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+}
+a {
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 green;
+  color: black;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+a:hover {
+  box-shadow: inset 100px 0 0 0 white;
+  color: white;
+  color: green;
+}
+
+nav {
+  background-color: white;
+  position: fixed;
+  margin: auto;
+  height: 12%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 9999;
+}
+figure {
+  height: 30%;
+  width: 64%;
+}
+img {
+  max-width: 100%;
+  height: 100%;
+}
+.contact {
+  flex-wrap: wrap;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+}
+button {
+  border: 1px solid currentColor;
+  background-color: white;
+  color: #043136;
+  font-family: roboto;
+  font-size: 1rem;
+  font-weight: 2rem;
+  overflow: hidden;
+  padding: 0.3rem 1rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+  border-radius: 3rem;
+  margin-top: 20px;
+}
+
+button::after {
+  background-color: green;
+  border-radius: 3rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+button:hover::after {
+  transform: translate(0, 0);
+}
+
+button:hover {
+  border: 2px solid transparent color indigo;
+  transform: scale(1.05) will-change transform;
+}
+
+.background_img {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  height: 50vh;
+}
+.paragraphe_container {
+  max-width: 50%;
+}
+
+.change {
+  background-color: green;
+  transition: all 1s;
+}
+.change_links_color {
+  color: white;
+}
+main {
+  height: 86%;
+  background-color: #043136;
+  margin: auto;
+  overflow: hidden;
+}
+.round_container {
+  position: relative;
+  height: 107%;
+  width: 105%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.round_div {
+  position: relative;
+  margin-right: -21px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  width: 38%;
+  height: 91%;
+  border-radius: 78%;
+}
+.round_div_2 {
+  background-image: url(/depositphotos_204510528-stock-photo-high-angle-view-builders-shaking.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 96%;
+  height: 93%;
+  border-radius: 78%;
+  border: 14px solid #043136;
+}
+.main_text {
+  display: flex;
+  flex-direction: column;
+  width: 59%;
+  justify-content: flex-start;
+}
+h1 {
+  font-family: "Criteria CF";
+  color: green;
+  font-weight: 43.75rem;
+  font-size: 2.625rem;
+  line-height: 2.525rem;
+}
+h3 {
+  font-family: "Criteria CF";
+  color: green;
+  font-weight: 43.75rem;
+  font-size: 2.625rem;
+  line-height: 2.525rem;
+}
+
+p2 {
+  color: white;
+  font-family: "Criteria CF";
+  font-weight: 40.75rem;
+  font-size: 2.025rem;
+  line-height: 2.125rem;
+}
+p3 {
+  color: black;
+  font-family: "Criteria CF";
+  font-weight: 40.75rem;
+  font-size: 2.025rem;
+  line-height: 2.125rem;
+}
+.round_effect_1 {
+  background-color: white;
+  position: absolute;
+  width: 20%;
+  height: 7%;
+  top: 35px;
+  right: 526px;
+  border-radius: 28px;
+}
+.round_effect_2 {
+  background-color: rgb(0, 128, 0);
+  position: absolute;
+  width: 20%;
+  height: 7%;
+  top: 83px;
+  right: 586px;
+  border-radius: 28px;
+}
+.round_effect_3 {
+  background-color: rgb(0, 128, 0);
+  position: absolute;
+  width: 21%;
+  height: 7%;
+  bottom: 85px;
+  right: 585px;
+  border-radius: 28px;
+}
+.round_effect_4 {
+  background-color: white;
+  position: absolute;
+  width: 13%;
+  height: 7%;
+  bottom: 146px;
+  right: 575px;
+  border-radius: 28px;
+}
+.round_effect_5 {
+  background-color: white;
+  position: absolute;
+  width: 14%;
+  height: 7%;
+  top: 162px;
+  right: 583px;
+  border-radius: 28px;
+}
+.round_effect_6 {
+  background-color: white;
+  position: absolute;
+  width: 15%;
+  height: 7%;
+  bottom: 33px;
+  right: 505px;
+  border-radius: 28px;
+}
+#services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.content {
+  height: 19.25rem;
+  width: 69.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.card_container {
+  width: 68%;
+  height: 52vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text_card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card .icon {
+  color: #3a6cf4;
+  font-size: 8em;
+  text-align: center;
+}
+.info {
+  width: 65%;
+}
+.card figure {
+  max-width: 100%;
+  height: 100%;
+}
+#slider-container {
+  height: 300px;
+  position: relative;
+}
+#slider-mask {
+  width: 500px;
+  margin: auto;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.slide {
+  width: 500px;
+  height: 100%;
+  top: 0;
+  position: absolute;
+}
+.slide figure {
+  width: 500px;
+  height: 100%;
+}
+
+#buttons {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 150px;
+  height: 30px;
+  margin-left: -75px;
+}
+#society {
+  height: 100vh;
+}
+.backgound_image {
+  height: 40%;
+  background-image: url(/depositphotos_204510528-stock-photo-high-angle-view-builders-shaking.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: end;
+}
+.society_background_image_text {
+  background-color: white;
+}
+.society_desc_paragraphe {
+  height: 50%;
+}
+
+footer {
+  height: 10%;
+}
+.footer_top {
+  height: 80%;
+  background-color: #043136;
+}
+.footer_buttom {
+  display: flex;
+  text-align: center;
+  height: 20%;
+}
